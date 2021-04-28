@@ -1,0 +1,8 @@
+<h3>This is lista de usuarios component</h3>
+
+
+<ul>
+    <li *ngFor="let user of users" style="margin: 20px;">
+      Id: {{user.id}}, Name: {{user.name}}, Age: {{user.age}} <button class="btn btn-danger" (click)="borrar(user.id)">Borrar</button>
+    </li>
+</ul>
